@@ -1,0 +1,149 @@
+  material_id  ...                            elastic_tensor_original
+0    mp-10003  ...  [[311.33514638650246, 144.45092552856926, 126....
+1    mp-10010  ...  [[306.93357350984974, 88.02634955100905, 105.6...
+2    mp-10015  ...  [[569.5291276937579, 157.8517489654999, 157.85...
+3    mp-10021  ...  [[70.13259066665267, 40.60474945058445, 37.387...
+4    mp-10025  ...  [[407.4791016459293, 176.4759188081947, 213.83...
+
+[5 rows x 17 columns]
+Index(['material_id', 'formula', 'nsites', 'space_group', 'volume',
+       'structure', 'elastic_anisotropy', 'G_Reuss', 'G_VRH', 'G_Voigt',
+       'K_Reuss', 'K_VRH', 'K_Voigt', 'poisson_ratio', 'compliance_tensor',
+       'elastic_tensor', 'elastic_tensor_original'],
+      dtype='object')
+  material_id    formula  space_group  ...       G_VRH       K_VRH  poisson_ratio
+0    mp-10003    Nb4CoSi          124  ...   97.141604  194.268884       0.285701
+1    mp-10010  Al(CoSi)2          164  ...   96.252006  175.449907       0.268105
+2    mp-10015       SiOs          221  ...  130.112955  295.077545       0.307780
+3    mp-10021         Ga           63  ...   15.101901   49.130670       0.360593
+4    mp-10025      SiRu2           62  ...  101.947798  256.768081       0.324682
+
+[5 rows x 8 columns]
+       space_group  elastic_anisotropy        G_VRH        K_VRH  poisson_ratio
+count  1181.000000         1181.000000  1181.000000  1181.000000    1181.000000
+mean    163.403895            2.145013    67.543145   136.259661       0.287401
+std      65.040733           19.140097    44.579408    72.886978       0.062177
+min       4.000000            0.000005     2.722175     6.476135       0.042582
+25%     124.000000            0.145030    34.117959    76.435350       0.249159
+50%     193.000000            0.355287    59.735163   130.382766       0.290198
+75%     221.000000            0.923117    91.332142   189.574194       0.328808
+max     229.000000          397.297866   522.921225   435.661487       0.467523
+StrToComposition:   0%|          | 0/1181 [00:00<?, ?it/s]StrToComposition:   0%|          | 1/1181 [00:00<03:31,  5.59it/s]StrToComposition: 100%|██████████| 1181/1181 [00:00<00:00, 5761.69it/s]
+  material_id    formula  space_group  ...       K_VRH  poisson_ratio   composition
+0    mp-10003    Nb4CoSi          124  ...  194.268884       0.285701  (Nb, Co, Si)
+1    mp-10010  Al(CoSi)2          164  ...  175.449907       0.268105  (Al, Co, Si)
+2    mp-10015       SiOs          221  ...  295.077545       0.307780      (Si, Os)
+3    mp-10021         Ga           63  ...   49.130670       0.360593          (Ga)
+4    mp-10025      SiRu2           62  ...  256.768081       0.324682      (Si, Ru)
+
+[5 rows x 9 columns]
+ElementProperty:   0%|          | 0/1181 [00:00<?, ?it/s]ElementProperty:   0%|          | 1/1181 [00:00<03:19,  5.91it/s]ElementProperty:  78%|███████▊  | 918/1181 [00:00<00:00, 4191.28it/s]ElementProperty: 100%|██████████| 1181/1181 [00:00<00:00, 4000.90it/s]
+  material_id  ... MagpieData mode SpaceGroupNumber
+0    mp-10003  ...                            229.0
+1    mp-10010  ...                            194.0
+2    mp-10015  ...                            194.0
+3    mp-10021  ...                             64.0
+4    mp-10025  ...                            194.0
+
+[5 rows x 141 columns]
+['@article{ward_agrawal_choudary_wolverton_2016, title={A general-purpose machine learning framework for predicting properties of inorganic materials}, volume={2}, DOI={10.1038/npjcompumats.2017.28}, number={1}, journal={npj Computational Materials}, author={Ward, Logan and Agrawal, Ankit and Choudhary, Alok and Wolverton, Christopher}, year={2016}}']
+CompositionToOxidComposition:   0%|          | 0/1181 [00:00<?, ?it/s]CompositionToOxidComposition:   0%|          | 1/1181 [00:00<03:22,  5.82it/s]CompositionToOxidComposition:  58%|█████▊    | 684/1181 [00:00<00:00, 3104.60it/s]CompositionToOxidComposition: 100%|██████████| 1181/1181 [00:00<00:00, 4008.30it/s]
+OxidationStates:   0%|          | 0/1181 [00:00<?, ?it/s]OxidationStates:   0%|          | 1/1181 [00:00<03:21,  5.85it/s]OxidationStates: 100%|██████████| 1181/1181 [00:00<00:00, 5246.37it/s]
+  material_id    formula  ...  range oxidation state std_dev oxidation state
+0    mp-10003    Nb4CoSi  ...                      0                0.000000
+1    mp-10010  Al(CoSi)2  ...                      7                3.872983
+2    mp-10015       SiOs  ...                      8                5.656854
+3    mp-10021         Ga  ...                      0                0.000000
+4    mp-10025      SiRu2  ...                      6                4.242641
+
+[5 rows x 146 columns]
+DensityFeatures:   0%|          | 0/1181 [00:00<?, ?it/s]DensityFeatures:   0%|          | 1/1181 [00:00<03:15,  6.03it/s]DensityFeatures:  75%|███████▍  | 882/1181 [00:00<00:00, 4022.49it/s]DensityFeatures: 100%|██████████| 1181/1181 [00:00<00:00, 3863.66it/s]  material_id    formula  space_group  ...    density        vpa  packing fraction
+0    mp-10003    Nb4CoSi          124  ...   7.834556  16.201654          0.688834
+1    mp-10010  Al(CoSi)2          164  ...   5.384968  12.397466          0.644386
+2    mp-10015       SiOs          221  ...  13.968635  12.976265          0.569426
+3    mp-10021         Ga           63  ...   6.036267  19.180359          0.479802
+4    mp-10025      SiRu2           62  ...   9.539514  13.358418          0.598395
+
+[5 rows x 149 columns]
+There are 140 possible descriptors:
+
+['space_group' 'MagpieData minimum Number' 'MagpieData maximum Number'
+ 'MagpieData range Number' 'MagpieData mean Number'
+ 'MagpieData avg_dev Number' 'MagpieData mode Number'
+ 'MagpieData minimum MendeleevNumber' 'MagpieData maximum MendeleevNumber'
+ 'MagpieData range MendeleevNumber' 'MagpieData mean MendeleevNumber'
+ 'MagpieData avg_dev MendeleevNumber' 'MagpieData mode MendeleevNumber'
+ 'MagpieData minimum AtomicWeight' 'MagpieData maximum AtomicWeight'
+ 'MagpieData range AtomicWeight' 'MagpieData mean AtomicWeight'
+ 'MagpieData avg_dev AtomicWeight' 'MagpieData mode AtomicWeight'
+ 'MagpieData minimum MeltingT' 'MagpieData maximum MeltingT'
+ 'MagpieData range MeltingT' 'MagpieData mean MeltingT'
+ 'MagpieData avg_dev MeltingT' 'MagpieData mode MeltingT'
+ 'MagpieData minimum Column' 'MagpieData maximum Column'
+ 'MagpieData range Column' 'MagpieData mean Column'
+ 'MagpieData avg_dev Column' 'MagpieData mode Column'
+ 'MagpieData minimum Row' 'MagpieData maximum Row' 'MagpieData range Row'
+ 'MagpieData mean Row' 'MagpieData avg_dev Row' 'MagpieData mode Row'
+ 'MagpieData minimum CovalentRadius' 'MagpieData maximum CovalentRadius'
+ 'MagpieData range CovalentRadius' 'MagpieData mean CovalentRadius'
+ 'MagpieData avg_dev CovalentRadius' 'MagpieData mode CovalentRadius'
+ 'MagpieData minimum Electronegativity'
+ 'MagpieData maximum Electronegativity'
+ 'MagpieData range Electronegativity' 'MagpieData mean Electronegativity'
+ 'MagpieData avg_dev Electronegativity'
+ 'MagpieData mode Electronegativity' 'MagpieData minimum NsValence'
+ 'MagpieData maximum NsValence' 'MagpieData range NsValence'
+ 'MagpieData mean NsValence' 'MagpieData avg_dev NsValence'
+ 'MagpieData mode NsValence' 'MagpieData minimum NpValence'
+ 'MagpieData maximum NpValence' 'MagpieData range NpValence'
+ 'MagpieData mean NpValence' 'MagpieData avg_dev NpValence'
+ 'MagpieData mode NpValence' 'MagpieData minimum NdValence'
+ 'MagpieData maximum NdValence' 'MagpieData range NdValence'
+ 'MagpieData mean NdValence' 'MagpieData avg_dev NdValence'
+ 'MagpieData mode NdValence' 'MagpieData minimum NfValence'
+ 'MagpieData maximum NfValence' 'MagpieData range NfValence'
+ 'MagpieData mean NfValence' 'MagpieData avg_dev NfValence'
+ 'MagpieData mode NfValence' 'MagpieData minimum NValence'
+ 'MagpieData maximum NValence' 'MagpieData range NValence'
+ 'MagpieData mean NValence' 'MagpieData avg_dev NValence'
+ 'MagpieData mode NValence' 'MagpieData minimum NsUnfilled'
+ 'MagpieData maximum NsUnfilled' 'MagpieData range NsUnfilled'
+ 'MagpieData mean NsUnfilled' 'MagpieData avg_dev NsUnfilled'
+ 'MagpieData mode NsUnfilled' 'MagpieData minimum NpUnfilled'
+ 'MagpieData maximum NpUnfilled' 'MagpieData range NpUnfilled'
+ 'MagpieData mean NpUnfilled' 'MagpieData avg_dev NpUnfilled'
+ 'MagpieData mode NpUnfilled' 'MagpieData minimum NdUnfilled'
+ 'MagpieData maximum NdUnfilled' 'MagpieData range NdUnfilled'
+ 'MagpieData mean NdUnfilled' 'MagpieData avg_dev NdUnfilled'
+ 'MagpieData mode NdUnfilled' 'MagpieData minimum NfUnfilled'
+ 'MagpieData maximum NfUnfilled' 'MagpieData range NfUnfilled'
+ 'MagpieData mean NfUnfilled' 'MagpieData avg_dev NfUnfilled'
+ 'MagpieData mode NfUnfilled' 'MagpieData minimum NUnfilled'
+ 'MagpieData maximum NUnfilled' 'MagpieData range NUnfilled'
+ 'MagpieData mean NUnfilled' 'MagpieData avg_dev NUnfilled'
+ 'MagpieData mode NUnfilled' 'MagpieData minimum GSvolume_pa'
+ 'MagpieData maximum GSvolume_pa' 'MagpieData range GSvolume_pa'
+ 'MagpieData mean GSvolume_pa' 'MagpieData avg_dev GSvolume_pa'
+ 'MagpieData mode GSvolume_pa' 'MagpieData minimum GSbandgap'
+ 'MagpieData maximum GSbandgap' 'MagpieData range GSbandgap'
+ 'MagpieData mean GSbandgap' 'MagpieData avg_dev GSbandgap'
+ 'MagpieData mode GSbandgap' 'MagpieData minimum GSmagmom'
+ 'MagpieData maximum GSmagmom' 'MagpieData range GSmagmom'
+ 'MagpieData mean GSmagmom' 'MagpieData avg_dev GSmagmom'
+ 'MagpieData mode GSmagmom' 'MagpieData minimum SpaceGroupNumber'
+ 'MagpieData maximum SpaceGroupNumber' 'MagpieData range SpaceGroupNumber'
+ 'MagpieData mean SpaceGroupNumber' 'MagpieData avg_dev SpaceGroupNumber'
+ 'MagpieData mode SpaceGroupNumber' 'minimum oxidation state'
+ 'maximum oxidation state' 'range oxidation state'
+ 'std_dev oxidation state' 'density' 'vpa' 'packing fraction']
+training R2 = 0.928
+training RMSE = 19.587
+Cross-validation results:
+Folds: 10, mean R2: 0.902
+Folds: 10, mean RMSE: 22.387
+training R2 = 0.989
+training RMSE = 7.687
+
+Cross-validation results:
+Folds: 10, mean R2: 0.924
+Folds: 10, mean RMSE: 19.277
