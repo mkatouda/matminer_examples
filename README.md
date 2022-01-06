@@ -5,6 +5,5 @@ based on official matminer examples (https://github.com/hackingmaterials/matmine
 
 ## bulk_modulus
 Use matminer and scikit-learn to create a model that predicts bulk modulus of materials 
-based on [Jupyter Notebook example]
-(https://nbviewer.jupyter.org/github/hackingmaterials/matminer_examples/blob/main/matminer_examples/machine_learning-nb/bulk_modulus.ipynb)
-https://github.com/hackingmaterials/matminer_examples/blob/main/matminer_examples/machine_learning-nb/bulk_modulus.ipynb)
+based on [Jupyter Notebook example](https://nbviewer.jupyter.org/github/hackingmaterials/matminer_examples/blob/main/matminer_examples/machine_learning-nb/bulk_modulus.ipynb)
+
